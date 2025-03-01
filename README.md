@@ -44,10 +44,7 @@ As seções das bandas possuem animações de entrada configuradas com **AOS.js*
 
 ## Como Usar
 
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
+1. Clone o repositório
 
 2. Instale as dependências (caso utilize Sass ou outras ferramentas adicionais):
    ```sh
