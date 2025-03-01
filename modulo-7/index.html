@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Insira os valores abaixo</h1>
+        <h2>O campo A deve ser <b>MENOR</b> que o campo B</h2>
+        <form id="form-comparativo">            
+            <input type="number" required id="campoA" placeholder="Campo A" />
+            <input type="number" required id="campoB" placeholder="Campo B" />
+            <p class="error-msg">O valor de B precisa ser maior que o valor de A</p>            
+            <button type="submit" id="btn-submit">Enviar</button>
+        </form>
+        <p class="sucess-message"></p>
+    </div>
+    <script src="./main.js"></script>    
+</body>
+</html>
