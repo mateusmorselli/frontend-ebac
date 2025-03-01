@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EBAC NEWS</h1>
+            <form>
+                <input type="search" placeholder="Buscar">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu-mobile">
+            <button type="button">Abrir menu</button>            
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Esportes
+                    <ul class="submenu">
+                        <li>
+                            <a href="#futebol">Futebol</a>
+                        </li>
+                        <li>
+                            <a href="#basquete">Basquete</a>
+                        </li>
+                        <li>
+                            <a href="#tenis">Tênis</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Economia
+                    <ul class="submenu">
+                        <li>
+                            <a href="#brasil">Brasil</a>
+                        </li>
+                        <li>
+                            <a href="#mundo">Mundo</a>
+                        </li>
+                        <li>
+                            <a href="#bolsa">Bolsa de Valores</a>
+                        </li>
+                    </ul>
+                </li>                
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Em Destaque</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://placehold.co/320x320" />
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                    </a>
+                </article>
+            </section>
+            <section>
+                <h2>Últimas notícias</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://placehold.co/320x320" />
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://placehold.co/320x320" />
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://placehold.co/320x320" />
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                        </a>
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://placehold.co/320x320" />
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://placehold.co/320x320" />
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://placehold.co/320x320" />
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                    </a>
+                </article>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://placehold.co/320x320" />
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eveniet aperiam id enim exercitationem maiores.</h3>
+                    </a>
+                </article>
+            </section>
+
+        </aside>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu-mobile').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

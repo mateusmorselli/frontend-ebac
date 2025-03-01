@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 250;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 56px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto consistente */
+    position: relative; /* Permite posicionar o pseudo-elemento */
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Posiciona a linha abaixo do texto */
+    width: 0; /* Começa sem largura */
+    height: 2px; /* Espessura da linha */
+    background-color: #000; /* Cor da linha */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expande a linha até 100% da largura */
+}
+
+.nav-mobile {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.nav-mobile:hover {
+    color: #e7e7e7;
+    cursor: pointer
+}
+
+main {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 40px; /* Espaçamento entre as seções */
+}
+
+.fotoLoja {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.fotoLoja img {
+    width: 100%;
+    display: block;
+}
+
+.textoLoja {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.textoLoja h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.textoLoja p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.produtosLoja {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;
+    row-gap: 5%;
+}
+
+.produtosLoja img {
+    width: 100%;
+}
+
+.produtos:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.tituloLoja h1 {
+    border-bottom: 2px solid #000;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-Width:640px) {
+    .nav-desktop {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+
+    main {
+        display: block;
+    }
+
+    .fotoLoja {
+        margin-bottom: 20px;
+    }
+
+    .produtosLoja {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);        
+        row-gap: 5%;
+    }
+}
+
+@media screen and (min-Width: 641px) and (max-Width: 1023px) {
+
+    main {
+        display: block;
+    }
+
+    .fotoLoja {
+        margin-bottom: 20px;
+    }
+
+    .produtosLoja {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8px;
+        row-gap: 5%;
+    }
+}
