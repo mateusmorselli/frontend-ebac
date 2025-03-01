@@ -61,4 +61,4 @@ As seções das bandas possuem animações de entrada configuradas com **AOS.js*
 
 ## Demonstração
 
-Acesse o site: **[aqyu](https://exercicio-modulo-22-alpha.vercel.app)**
+Acesse o site: **[aqui](https://exercicio-modulo-22-alpha.vercel.app)**
