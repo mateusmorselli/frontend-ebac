@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#header1 {
+    background-color: black;
+    padding: 2px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    max-width: 100%;
+}
+
+#header2 {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    margin-top: 29px;
+    z-index: 1;
+}
+
+#header3 {
+    background-color: rgb(236, 239, 241);
+    position: fixed;
+    width: 100%;
+    margin-top: 130px;
+    padding: 2px;
+    z-index: 1;
+}
+
+.carousel-item img {
+    display: block;
+    margin: auto; /* Centraliza horizontalmente */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+section {
+    height: 112vh; /* Cada seção ocupa a altura da tela */
+    background-color: #fff; /* Cor de fundo para visualização */
+}
+
+/* Apenas a primeira seção recebe o padding-top */
+section:first-of-type {
+    padding-top: 160px; /* Espaço para o título ficar abaixo do menu */
+}
+
+/* A partir da segunda seção, aplicamos um margin-top negativo */
+section:not(:first-of-type) {
+    margin-top: -120px; /* Compensa o padding-top da primeira seção */
+}
+
+#menu .nav-link {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menu .nav-link:hover {
+    border-bottom: 2px solid #000;
+}
+
+.content-wrapper h5, p, a {
+	background: #fff;
+    color:#000;
+}
+
+.btn-custom {
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-weight: bold; /* Texto em negrito */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Efeito de profundidade */
+    transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+.btn-custom:hover {
+    background-color: #f8f9fa; /* Cor de fundo mais clara ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1); /* Aumenta a sombra ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar o botão */
+}
+
+.btn-custom:active {
+    transform: translateY(0); /* Volta ao normal ao clicar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Sombra reduzida ao clicar */
+}
+
+#produtos {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card:hover {
+    border: 2px solid black; 
+    transition: border 0.3s ease; 
+}
+
+
+
+.comprar-agr {
+    margin-bottom: 2rem;
+}
+
+.comprar-agr:hover {
+    background-color: black;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-Width:767px) {
+    #header3 {
+        display: none;
+    }
+
+    #opcoes-fundo {
+        width: 120%;
+    }
+
+    .mercedes video {
+        height: 100vh;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100vh; /* 100% da altura da viewport */
+        object-fit: cover; /* Faz o vídeo preencher a tela sem distorcer */
+    }
+
+    #texto-video {
+        padding-bottom: 190px; /* Menos espaço inferior */
+        margin-bottom: 20px; /* Ajuste de margem para mover o texto mais para cima */
+    }
+
+    #texto-video .content-wrapper {
+        max-width: 80%; /* Aumentar a largura para mais visibilidade */
+    }
+
+    #texto-video h5 {
+        font-size: 1rem; /* Diminui o tamanho do título */
+    }
+
+    #texto-video p {
+        font-size: 1rem; /* Diminui o tamanho do texto */
+    }
+
+    #texto-video .btn {
+        font-size: 0.7rem; /* Diminui o tamanho do botão */
+    }
+
+    #chuteiras {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-Width: 768px) and (max-Width: 1023px) {
+    #header3 {
+        display: none;
+    }
+
+    #texto-video {
+        padding-bottom: 250px; /* Menos espaço inferior */
+        margin-bottom: 20px; /* Ajuste de margem para mover o texto mais para cima */
+    }
+
+    #texto-video .content-wrapper {
+        max-width: 80%; /* Aumentar a largura para mais visibilidade */
+    }
+
+    #texto-video h5 {
+        font-size: 1rem; /* Diminui o tamanho do título */
+    }
+
+    #texto-video p {
+        font-size: 1rem; /* Diminui o tamanho do texto */
+    }
+
+    #texto-video .btn {
+        font-size: 0.7rem; /* Diminui o tamanho do botão */
+    }
+
+    #chuteiras {
+        padding-top: 100px;
+    }
+}

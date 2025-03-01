@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Módulo 13</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15d098815d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header1">
+        <div class="container">
+            <div id="carousel-h1" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-flex" src="./assets/header1-1.png" alt="">
+                        <div class="carousel-caption">
+                            <h2>Foto 1</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-flex" src="./assets/header1-2.png" alt="">
+                        <div class="carousel-caption">
+                            <h2>Foto 2</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-flex" src="./assets/header1-3.png" alt="">
+                        <div class="carousel-caption">
+                            <h2>Foto 3</h2>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <header id="header2">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="#">
+                    <img src="./assets/header2-1.png" alt="logo">
+                </a>                
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+                <nav class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#calcados">Calçados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mulher">Mulher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#homem">Homem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#infantil">Infantil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#infantil">Esportes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#infantil">Mundo Adidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#infantil">OUTLET</a>
+                        </li>                        
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul class="nav" id="opcoes-fundo">
+                        <li class="nav-item">        
+                            <a class="nav-link text-dark" href="#"><input type="text"><i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+
+    <header id="header3">
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="./assets/header3-1.png" alt="header3">
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#header2">
+        <section id="inicio">
+            <div class="card text-bg-dark mercedes">
+                <video class="card-img" autoplay loop muted>
+                    <source src="./assets/video-desktop.mp4" media="(min-width: 1024px)">
+                    <source src="./assets/video-cel.mp4" media="(max-width: 1023px)">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start" id="texto-video">
+                    <img class="card-title mb-2" src="./assets/overlay-video.png" alt="" style="width: 95px; height: 30px;">
+                    <div class="content-wrapper" style="max-width: 50%;">
+                        <h5 class="card-subtitle">THE RACE BEGINS</h5>
+                        <p class="card-text">Nova coleção adidas x Mercedes-AMG PETRONAS F1. Um novo capítulo no automobilismo.</p> 
+                        <p class="card-text">Acesso antecipado para membros AdiClub</p>
+                        <a href="#" class="btn btn-custom">Comprar agora <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bellingham">
+            <div class="card text-bg-dark">                    
+                <div class="card-img" id="media-container">
+                    <img id="image" class="media-content" src="./assets/body2.png" alt="1">
+                    <video id="video" class="media-content" autoplay loop muted style="display: none;">
+                        <source src="./assets/body2-cel.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                    <h5 class="card-title">PREDATOR</h5>
+                    <p class="card-text">Feita para fazer gols.</p>
+                    <a href="#" class="btn btn-custom">Comprar agora <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="chuteiras">
+            <div class="d-flex justify-content-end">
+                <a class="comprar-agr" href="#">COMPRAR AGORA</a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <article class="card">                        
+                            <img src="./assets/predador1.png" alt="1">
+                            <div class="card-body">
+                                <h4 class="card-title">Chuteira Predador Elite</h4>                        
+                                <p class="card-text">Performance</p>
+                            </div>                        
+                        </article>
+                    </a>                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <article class="card">                        
+                            <img src="./assets/predador1.png" alt="1">
+                            <div class="card-body">
+                                <h4 class="card-title">Chuteira Predador Elite</h4>                        
+                                <p class="card-text">Performance</p>
+                            </div>                        
+                        </article>
+                    </a> 
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#">
+                        <article class="card">                        
+                            <img src="./assets/predador1.png" alt="1">
+                            <div class="card-body">
+                                <h4 class="card-title">Chuteira Predador Elite</h4>                        
+                                <p class="card-text">Performance</p>
+                            </div>                        
+                        </article>
+                    </a> 
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="./lib/bootstrap.bundle.min.js"></script>
+<script>
+    function checkScreenSize() {
+        const image = document.getElementById('image');
+        const video = document.getElementById('video');
+
+        // Se a largura da tela for menor que 1024px, mostra o vídeo e oculta a imagem
+        if (window.innerWidth < 1024) {
+            image.style.display = 'none';
+            video.style.display = 'block';
+        } else {
+            image.style.display = 'block';
+            video.style.display = 'none';
+        }
+    }
+
+    // Chama a função ao carregar a página
+    window.addEventListener('load', checkScreenSize);
+    // Chama a função quando o tamanho da tela mudar
+    window.addEventListener('resize', checkScreenSize);
+</script>
+</html>
