@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Poderoso Chefão</title>
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__logo">
+            <img src="./dist/images/logo.png" alt="">
+        </h1>
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu__item"><a href="#sobre">Sobre o Filme</a></li>
+                <li class="header__menu__item"><a href="#personagens">Personagens</a></li>
+                <li class="header__menu__item"><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="sobre" class="sobre">
+            <div class="sobre__img">
+                <img src="./dist/images/about.jpg" alt="Vito Corleone">
+            </div>
+            <div class="sobre__text">
+                <h2>Sobre o Filme</h2>
+                <p>O Poderoso Chefão (The Godfather) é um dos filmes mais icônicos da história do cinema, dirigido por Francis Ford Coppola e lançado em 1972. Baseado no romance de Mario Puzo, o filme conta a história da família Corleone, uma poderosa família mafiosa nos Estados Unidos, liderada pelo patriarca Don Vito Corleone, interpretado magistralmente por Marlon Brando.</p>
+                <p>A trama acompanha a transição de poder dentro da família, especialmente quando Michael Corleone (Al Pacino), que inicialmente tenta se manter afastado dos negócios criminosos, acaba sendo puxado para o mundo da máfia e se transforma no novo líder implacável da organização. O filme aborda temas como lealdade, traição, vingança e o peso do poder, tudo envolvido em uma atmosfera de suspense e drama intenso.</p>
+                <p>Com atuações memoráveis, uma trilha sonora marcante composta por Nino Rota e uma direção impecável, O Poderoso Chefão se tornou um clássico do cinema e influenciou inúmeras produções ao longo dos anos. Seu impacto foi tão grande que gerou duas sequências, completando uma das trilogias mais respeitadas do cinema.</p>
+            </div>            
+        </section>
+
+        <!-- Seção Personagens com Tabs -->
+        <section id="personagens" class="personagens">
+            <h2>Personagens</h2>
+            <nav class="personagens__tabs">
+                <button class="personagens__tabs__button personagens__tabs__button--is-active" data-tab-button="vito">Vito Corleone</button>
+                <button class="personagens__tabs__button" data-tab-button="michael">Michael Corleone</button>
+                <button class="personagens__tabs__button" data-tab-button="sonny">Sonny Corleone</button>
+            </nav>
+            <nav>
+                <div class="personagens__content personagens__content--is-active" id="vito" data-tab-id="vito">
+                    <img src="./dist/images/vito.jpg" alt="Vito Corleone">
+                    <p><b>Vito Corleone</b> interpretado por Marlon Brando em O Poderoso Chefão (1972), é o patriarca da família Corleone, uma das mais poderosas organizações criminosas dos Estados Unidos. Nascido na Sicília e imigrante nos EUA, Vito construiu seu império no crime com astúcia, coragem e um forte senso de justiça. Apesar de sua vida no submundo, ele segue códigos rígidos de honra e respeito, sendo tanto temido quanto admirado. <br>
+    
+                    Conhecido pela frase "Vou fazer uma oferta que ele não poderá recusar", Vito usa sua inteligência e frieza para controlar situações, mantendo uma imagem de generosidade, mas manipulando eventos nos bastidores. Sua maior dedicação é à família, e ele está disposto a proteger seus filhos e a honra de sua linhagem a todo custo. Sua relação com seu filho Michael, especialmente, é central para a trama, refletindo sua luta constante entre o amor familiar e o poder. <br>
+                        
+                    Vito Corleone é uma figura trágica, simbolizando o poder, a honra e o sacrifício, enquanto sua história molda a forma como o conceito de "chefão" é visto na cultura popular.</p>
+                </div>
+                <div class="personagens__content" id="michael" data-tab-id="michael">
+                    <img src="./dist/images/michael.jpg" alt="Micheal Corleone">
+                    <p><b>Micheal Corleone</b> interpretado por Al Pacino, começa O Poderoso Chefão como o filho mais distante e civilizado da família Corleone. Com um passado acadêmico e uma vida fora dos negócios da máfia, ele inicialmente tenta evitar o legado criminoso de seu pai, Vito. No entanto, a tentativa de Michael de viver uma vida legítima é interrompida quando seu pai é atacado, forçando-o a se envolver no mundo da máfia para proteger a família. <br>
+    
+                    Após o atentado contra seu pai, Michael toma medidas violentas para vingar a família, começando com o assassinato de Sollozzo e o policial corrupto McCluskey. Esse momento marca sua entrada definitiva no mundo do crime, afastando-o cada vez mais de seu desejo inicial de distanciamento e colocando-o no centro dos negócios da máfia. <br>
+                            
+                    Ao longo do filme, Michael se transforma de um jovem idealista em um líder implacável, tomando decisões cruéis e se tornando o novo chefão da família Corleone. Sua jornada é uma reflexão sobre o preço do poder e como as circunstâncias podem mudar o caráter de uma pessoa, levando-o a fazer escolhas que ele nunca imaginou.</p>
+                </div>
+                <div class="personagens__content" id="sonny" data-tab-id="sonny">
+                    <img src="./dist/images/sonny.jpg" alt="Sonny Corleone">
+                    <p><b>Sonny Corleone</b> interpretado por James Caan, é o filho mais impulsivo e violento de Vito Corleone. Ao contrário de Michael, Sonny é profundamente envolvido nos negócios da família desde jovem. Sua natureza explosiva e impetuosa muitas vezes coloca em risco a estabilidade da família, já que ele prefere agir com agressividade do que com cautela, o que acaba gerando conflitos dentro e fora da máfia. <br>
+    
+                    Embora Sonny seja leal à sua família, sua falta de controle sobre as emoções o leva a tomar decisões precipitadas, como sua reação impulsiva ao atentado contra seu pai. Seu comportamento errático acaba o tornando um alvo fácil para seus inimigos, e sua postura impetuosa é um contraste com a liderança mais calculista de Vito e Michael. <br>
+                                
+                    A tragédia de Sonny é que, apesar de seu desejo de proteger a família e ser visto como o sucessor de seu pai, ele é incapaz de sustentar sua posição devido ao temperamento e falta de visão estratégica. Sua morte violenta, resultado de uma emboscada, marca um dos momentos mais impactantes do filme e simboliza as consequências de sua abordagem imprudente no mundo da máfia</p>
+                </div>
+            </nav>
+        </section>
+
+        <section class="media" id="media">
+            <h2>Media</h2>
+            <div class="clipes">
+                <video controls class="trailer">
+                    <source src="./src/images/video1.mp4" type="video/mp4">
+                    Seu navegador não possui suporte para videos
+                </video>
+                <video controls class="trailer">
+                    <source src="./src/images/video2.mp4" type="video/mp4">
+                    Seu navegador não possui suporte para videos
+                </video>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+            <div class="footer-icons">
+                <a href="https://instagram.com/mateusmorselli" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5ZM19.5 7.75a.75.75 0 0 1-.75.75h-1a.75.75 0 0 1-.75-.75v-1a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 .75.75v1ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15a3.5 3.5 0 0 0 0-7Z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mateus-morselli-881241287/" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3 8.75a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75V19a.75.75 0 0 1-.75.75h-2.5A.75.75 0 0 1 3 19V8.75ZM9 8.75a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.03a5.08 5.08 0 0 1 4.25-2.28c2.9 0 5.25 2.36 5.25 5.25V19a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1-.75-.75v-6.25c0-1.04-.96-1.96-2-1.96s-2 .92-2 1.96V19a.75.75 0 0 1-.75.75h-2.5A.75.75 0 0 1 9 19V8.75Z"/></svg>
+                </a>
+                <a href="https://github.com/mateusmorselli" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.66-.2.66-.45V18c-2.72.6-3.3-1.3-3.3-1.3a2.6 2.6 0 0 0-1.1-1.44c-.9-.64.1-.64.1-.64a2 2 0 0 1 1.5 1c.9 1.5 2.4 1.06 3 .8a2.2 2.2 0 0 1 .6-1.37c-2.16-.25-4.43-1.08-4.43-4.75a3.7 3.7 0 0 1 1-2.6 3.4 3.4 0 0 1 .1-2.57s.8-.25 2.6 1a9.2 9.2 0 0 1 4.6 0c1.8-1.3 2.6-1 2.6-1a3.4 3.4 0 0 1 .1 2.57 3.7 3.7 0 0 1 1 2.6c0 3.67-2.27 4.5-4.43 4.75.3.3.6.9.6 1.8v2.66c0 .25.16.55.67.45A10 10 0 0 0 12 2Z"/></svg>
+                </a>
+            </div>
+        </footer>
+
+        <script src="./dist/js/tabs.js"></script>
+        <script src="./dist/js/header_effect.js"></script>
+
+        
+
+    
+</body>
+</html>

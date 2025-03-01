@@ -1,0 +1,49 @@
+.header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Suaviza a transição */
+
+    &--is-hidden {
+        transform: translateY(-100%); /* Move o header para cima */
+        opacity: 0; /* Torna o header invisível */
+    }
+
+    &__logo {
+        img {
+            width: 100px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        padding: 32px 0;
+        gap: 32px;
+        
+        a {
+            color: #000;
+            position: relative;
+            font-weight: bold;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 0;
+                height: 1px;
+                background-color: black;
+                transition: width 0.3s ease;
+            }
+                
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

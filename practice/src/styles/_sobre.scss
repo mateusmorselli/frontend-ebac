@@ -1,0 +1,48 @@
+.sobre {
+    display: flex;
+    width: 100%;   
+    
+
+    &__img {
+        width: 50%;
+        height: 100vh;
+        padding: 48px;
+    }
+
+    &__text {
+        text-align: justify;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.7em;
+    }
+
+    @media (max-width: 1600px) {
+        display: block;
+        
+        &__img {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            display: flex; /* Ativa flexbox */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente (se precisar) */
+            
+            img {
+                max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+                height: auto;
+            }
+        }
+
+        &__text {
+            width: 100%; /* Ocupa toda a largura */
+            text-align: center; /* Centraliza o texto */
+            align-items: center; /* Alinha ao centro */
+            justify-content: center; /* Centraliza verticalmente */
+            padding: 20px;
+            font-size: 0.6em;
+        }
+        
+    }
+}
