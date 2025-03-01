@@ -1,0 +1,32 @@
+@use '../variables' as v;
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        color: v.$fonte1;
+        background-color: v.$button;
+
+        &:hover {
+            background-color: #825DF6;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}
