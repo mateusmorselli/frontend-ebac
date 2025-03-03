@@ -28,6 +28,26 @@ A aplicação permite que o usuário insira dois números e selecione uma opera�
 
 ## Como Rodar o Projeto
 
-1. Clone o repositório:
-
+1. Clone o repositório
 2. Instale as dependências
+   npm install
+3. Execute o projeto
+   npm run dev
+4. Acesse a aplicação no seu navegador no endereço http://localhost:3000.
+
+## Estrutura do Projeto
+.
+├── public/              # Arquivos públicos (ex.: index.html)
+├── src/                 # Código-fonte do projeto
+│   ├── assets/          # Arquivos estáticos (imagens, estilos, etc.)
+│   ├── components/      # Componentes Vue.js
+│   │   ├── Cabecalho.vue # Componente do cabeçalho
+│   │   ├── Calculos.vue  # Componente de entrada de números e seleção de operação
+│   │   └── Results.vue   # Componente de exibição dos resultados
+│   ├── App.vue          # Componente principal da aplicação
+│   └── main.js          # Ponto de entrada da aplicação
+├── package.json         # Dependências e scripts do projeto
+└── README.md            # Este arquivo
+
+## Licença
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
