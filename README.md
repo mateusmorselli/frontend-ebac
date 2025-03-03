@@ -35,19 +35,21 @@ A aplicação permite que o usuário insira dois números e selecione uma opera�
    npm run dev
 4. Acesse a aplicação no seu navegador no endereço http://localhost:3000.
 
-## Estrutura do Projeto
-├── src
-│   ├── assets       # Arquivos de imagem e recursos estáticos
-│   ├── components   # Componentes Vue.js
-│   │   └── Cabecalho.vue
-│   │   └── Calculos.vue
-│   │   └── Results.vue
-│   ├── App.vue      # Componente principal
-│   └── main.js      # Arquivo de entrada
-├── public
-│   └── index.html   # Arquivo HTML principal
-├── package.json     # Dependências e scripts do projeto
-└── README.md        # Este arquivo
+
+### Explicação da Estrutura
+
+- **`src/`**: Contém todo o código-fonte do projeto.
+  - **`assets/`**: Armazena recursos estáticos, como imagens, ícones ou arquivos CSS.
+  - **`components/`**: Contém os componentes Vue.js reutilizáveis.
+    - **`Cabecalho.vue`**: Componente do cabeçalho da aplicação.
+    - **`Calculos.vue`**: Componente responsável pela entrada dos números e seleção da operação.
+    - **`Results.vue`**: Componente que exibe os resultados das operações.
+  - **`App.vue`**: O componente principal que gerencia a estrutura da aplicação.
+  - **`main.js`**: O ponto de entrada da aplicação, onde o Vue é inicializado.
+- **`public/`**: Contém arquivos públicos que serão servidos diretamente.
+  - **`index.html`**: O arquivo HTML principal que serve como base para a aplicação.
+- **`package.json`**: Contém as dependências do projeto e scripts úteis (como `dev` e `build`).
+- **`README.md`**: Este arquivo, que explica o projeto e como usá-lo.
 
 ## Licença
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
