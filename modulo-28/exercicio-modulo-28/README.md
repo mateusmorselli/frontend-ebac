@@ -10,15 +10,15 @@ Este é um projeto simples de uma calculadora de IMC (Índice de Massa Corporal)
 
 ## Estrutura do Projeto
 
-src/
-├── components/
-│   ├── Calculadora/
-│   │   └── index.jsx
-│   └── Resultado/
-│       └── index.jsx
-├── App.js
-├── App.css
-└── index.js
+src/  
+├── components/  
+│   ├── Calculadora/  
+│   │   └── index.jsx  
+│   └── Resultado/  
+│       └── index.jsx  
+├── App.js  
+├── App.css  
+└── index.js  
 
 - **Calculadora**: Componente responsável por coletar os dados do usuário e calcular o IMC.
 - **Resultado**: Componente que exibe o resultado do cálculo do IMC e a classificação.
